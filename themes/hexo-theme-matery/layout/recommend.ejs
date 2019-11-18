@@ -6,7 +6,7 @@
     }
 
     .recommends-container .tag-title {
-        margin-bottom: 10px;
+        margin-bottom: -33px;
         color: #3C4858;
         font-size: 1.75rem;
         font-weight: 400;
@@ -22,6 +22,7 @@
     .recomend-ship .title {
         display: flex;
         align-items: center;
+        height: 170px;
     }
 
     .recomend-ship .title div {
@@ -30,7 +31,7 @@
     }
 
     .recomend-ship .title h1 {
-        line-height: 0.8rem;
+        /*line-height: 0.8rem;*/
         padding-bottom: 16px;
         border-bottom: 2px solid #fff;
         position: relative;
@@ -39,18 +40,23 @@
     }
 
     .frind-card1 {
-        background-color: rgb(22, 22, 22);
-        opacity: 0.3;
+        background-color: rgb(140, 172, 210);;
     }
 
     .frind-card2 {
-        background-color: rgb(33, 33, 33);
-        opacity: 0.3;
+        background-color: rgb(150, 192, 230);
     }
 
     .frind-card3 {
-        background-color: rgb(44, 44, 44);
-        opacity: 0.3;
+        background-color: rgb(180, 192, 230);
+    }
+
+    .frind-card4 {
+        background-color: rgb(200, 200, 250);
+    }
+
+    .frind-card5 {
+        background-color: rgb(200, 200, 250);
     }
 
     .recommend-name {
@@ -175,7 +181,7 @@
                             <% for (var i = 0, len = recommends.length; i < len; i++) { %>
                                 <% var recommend = recommends[i]; %>
                                 <div class="col s12 m6 l4 recommend-div" data-aos="zoom-in-up">
-                                    <div class="card frind-card<%- ((i % 10) + 1) %>">
+                                    <div class="card frind-card<%- ((i % 3) + 1) %>">
                                         <div class="recomend-ship">
                                             <div class="title">
                                                 <div>

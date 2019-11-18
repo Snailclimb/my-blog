@@ -1,16 +1,20 @@
 [
   {
-    "img": "https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-7/jdk1.8之前的内部结构.png",
     "name": "JavaGuide",
-    "introduction": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。",
+    "introduction": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。期待你的 Star!",
     "url": "https://github.com/Snailclimb/JavaGuide",
     "title": "前去学习"
   },
   {
-    "img": "http://image.luokangyuan.com/1_qq_27922023.jpg",
-    "name": "JavaGuide",
-    "introduction": "我不是大佬，只是在追寻大佬12312312的脚步",
-    "url": "/javaguide",
+    "name": "springboot-guide",
+    "introduction": "SpringBoot 核心知识点和面试题总结。期待你的 Star!",
+    "url": "https://github.com/Snailclimb/springboot-guide",
+    "title": "前去学习"
+  },
+  {
+    "name": "programmer-advancement",
+    "introduction": "程序员应该有的一些好习惯！",
+    "url": "https://github.com/Snailclimb/programmer-advancement",
     "title": "前去学习"
   }
 ]

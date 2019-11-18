@@ -7,7 +7,7 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Java学习/面试指南:
+  Java:
     icon: fab fa-java
     url: /javaguide
     children:
@@ -491,14 +491,14 @@ addthis:
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
 subtitle:
-  enable: false
-  loop: true # 是否循环
+  enable: true
+  loop: false # 是否循环
   showCursor: true # 是否显示光标
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  sub1: 爱生活，多思考，睡足觉！
+  sub2: Talk is cheap,show me the code!
 
 # 手机二级菜单.
 navMenu:
