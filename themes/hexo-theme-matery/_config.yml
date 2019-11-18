@@ -8,8 +8,15 @@ menu:
     url: /categories
     icon: fas fa-bookmark
   Java学习/面试指南:
-    url: /javaguide
     icon: fab fa-java
+    url: /javaguide
+    children:
+      - name: Musics
+        url:  /javaguide/java基础
+        icon: fas fa-music
+      - name: Musics
+        url:  /javaguide/jvm
+        icon: fas fa-music
   SpringBoot:
     url: /springboot
     icon: fas fa-seedling

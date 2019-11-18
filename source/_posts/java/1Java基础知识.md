@@ -4,7 +4,6 @@ date: 2018-09-18 09:25:00
 author: SnailClimb
 top: true
 toc: true
-img: https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png
 mathjax: false
 summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
 categories: Java
