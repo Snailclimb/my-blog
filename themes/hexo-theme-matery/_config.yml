@@ -11,12 +11,10 @@ menu:
     icon: fab fa-java
     url: /javaguide
     children:
-      - name: Musics
+      - name: 1-Java基础
         url:  /javaguide/java基础
-        icon: fas fa-music
-      - name: Musics
+      - name: 2-JVM
         url:  /javaguide/jvm
-        icon: fas fa-music
   SpringBoot:
     url: /springboot
     icon: fas fa-seedling
