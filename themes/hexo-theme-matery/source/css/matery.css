@@ -532,7 +532,7 @@ header .go-back i {
     position: relative;
     display: flex;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     padding: 0;
     border: 0;
     overflow: hidden;
@@ -587,13 +587,14 @@ header .go-back i {
 
 .bg-cover .description {
     padding: 5px;
-    font-size: 1.25rem;
     line-height: 1.4em;
-    color: #eee;
+    color: black;
 }
 
 .bg-cover .post-title {
-    font-size: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px
 }
 
 /*
