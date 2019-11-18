@@ -1,57 +1,74 @@
 <%- partial('_partial/bg-cover') %>
 <style>
-    .friends-container {
+    .recommends-container {
         margin-top: -100px;
         margin-bottom: 30px;
     }
 
-    .friends-container .tag-title {
+    .recommends-container .tag-title {
         margin-bottom: 10px;
         color: #3C4858;
         font-size: 1.75rem;
         font-weight: 400;
     }
 
-    .frind-ship img {
-        border-radius: 50%;
-    }
 
     /* 一下是按钮样式 */
 
-    .frind-ship {
+    .recomend-ship {
         padding: 10px 20px;
     }
 
-    .frind-ship .title {
+    .recomend-ship .title {
         display: flex;
         align-items: center;
     }
 
-    .frind-ship .title div {
+    .recomend-ship .title div {
         color: #fff;
         padding-left: 10px;
     }
 
-    .frind-ship .title h1 {
+    .recomend-ship .title h1 {
         line-height: 0.8rem;
         padding-bottom: 16px;
         border-bottom: 2px solid #fff;
         position: relative;
-        top:-15px;
+        top: -15px;
         left: 3px;
     }
 
-    .friend-button {
+    .frind-card1 {
+        background-color: rgb(22, 22, 22);
+        opacity: 0.3;
+    }
+
+    .frind-card2 {
+        background-color: rgb(33, 33, 33);
+        opacity: 0.3;
+    }
+
+    .frind-card3 {
+        background-color: rgb(44, 44, 44);
+        opacity: 0.3;
+    }
+
+    .recommend-name {
+        text-align: center;
+    }
+
+    .recommend-button {
         display: flex;
         justify-content: center;
         margin-bottom: -27px;
+        transform: translate3d(0px, 0px, 0px);
     }
 
-    .friend-button a {
+    .recommend-button a {
         border-radius: 40px;
     }
 
-    .friend-all .tag-post {
+    .recommend-all .tag-post {
         margin-bottom: 30px;
     }
 
@@ -138,45 +155,6 @@
         text-decoration: none;
     }
 
-    .frind-card1 {
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    }
-
-    .frind-card2 {
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .frind-card3 {
-        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    }
-
-    .frind-card4 {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    }
-
-    .frind-card5 {
-        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-    }
-
-    .frind-card6 {
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    }
-
-    .frind-card7 {
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    }
-
-    .frind-card8 {
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    }
-
-    .frind-card9 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    }
-
-    .frind-card10 {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    }
 
     article .card {
         overflow: visible !important;
@@ -184,38 +162,38 @@
 </style>
 
 <main class="content">
-    <div class="container friends-container">
+    <div class="container recommends-container">
         <div class="card">
             <div class="card-content">
                 <div class="tag-title center-align">
                     <i class="fas fa-heart"></i>&nbsp;&nbsp;<%= __('recommends') %>
                 </div>
-                <article id="friends-link">
+                <article id="recommends-link">
                     <% if (site.data && site.data.recommends) { %>
-                    <% var recommends = site.data.recommends; %>
-                    <div class="row tags-posts friend-all">
-                        <% for (var i = 0, len = recommends.length; i < len; i++) { %>
-                        <% var recommend = recommends[i]; %>
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card<%- ((i % 10) +1) %>" >
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <div>
-                                            <h1 class="friend-name"><%- recommend.name %></h1>
-                                            <p style="position: relative;top: -35px;"><%- recommend.introduction %></p>
+                        <% var recommends = site.data.recommends; %>
+                        <div class="row tags-posts recommend-all">
+                            <% for (var i = 0, len = recommends.length; i < len; i++) { %>
+                                <% var recommend = recommends[i]; %>
+                                <div class="col s12 m6 l4 recommend-div" data-aos="zoom-in-up">
+                                    <div class="card frind-card<%- ((i % 10) + 1) %>">
+                                        <div class="recomend-ship">
+                                            <div class="title">
+                                                <div>
+                                                    <h1 class="recommend-name"><%- recommend.name %></h1>
+                                                    <p style="position: relative;top: -35px;"><%- recommend.introduction %></p>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-button">
+                                                <a href="<%- recommend.url %>" target="_blank"
+                                                   class="button button-glow button-rounded button-caution">
+                                                    <%- recommend.title %>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="friend-button">
-                                        <a href="<%- recommend.url %>" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            <%- recommend.title %>
-                                        </a>
-                                    </div>
                                 </div>
-                            </div>
+                            <% } %>
                         </div>
-                        <% } %>
-                    </div>
                     <% } %>
                 </article>
             </div>
@@ -228,23 +206,23 @@
         <div class="card">
 
             <% if (theme.gitalk && theme.gitalk.enable) { %>
-            <%- partial('_partial/gitalk') %>
+                <%- partial('_partial/gitalk') %>
             <% } %>
 
             <% if (theme.gitment.enable) { %>
-            <%- partial('_partial/gitment') %>
+                <%- partial('_partial/gitment') %>
             <% } %>
 
             <% if (theme.disqus.enable) { %>
-            <%- partial('_partial/disqus') %>
+                <%- partial('_partial/disqus') %>
             <% } %>
 
             <% if (theme.livere && theme.livere.enable) { %>
-            <%- partial('_partial/livere') %>
+                <%- partial('_partial/livere') %>
             <% } %>
 
             <% if (theme.valine && theme.valine.enable) { %>
-            <%- partial('_partial/valine') %>
+                <%- partial('_partial/valine') %>
             <% } %>
 
         </div>
@@ -253,8 +231,8 @@
 
 <script>
     $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
+        $('#recommends-link').masonry({
+            itemSelector: '.recommend-div'
         });
     });
 </script>
