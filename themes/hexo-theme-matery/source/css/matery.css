@@ -589,6 +589,7 @@ header .go-back i {
     padding: 5px;
     line-height: 1.4em;
     color: black;
+    font-family: "Times New Roman", serif;
 }
 
 .bg-cover .post-title {
