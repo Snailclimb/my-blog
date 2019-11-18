@@ -556,7 +556,7 @@ header .go-back i {
 
 .bg-cover:before,
 .bg-cover:after {
-    background-color:rgb(237,167,65);
+    background-color: rgb(237, 167, 65);
     opacity: 0.2;
     position: absolute;
     z-index: 1;
@@ -570,8 +570,9 @@ header .go-back i {
 
 .bg-cover .container {
     position: absolute;
-    top: 35%;
-    color: #fff;
+    top: 28%;
+    font-family: STKaiti, serif;
+    color: #4dabf7;
     z-index: 2;
     left: 0;
     right: 0;

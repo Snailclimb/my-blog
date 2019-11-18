@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d7b3ebd-22d5-4aff-8e98-89de6bc075c6" name="Default Changelist" comment="" />
+    <list default="true" id="9d7b3ebd-22d5-4aff-8e98-89de6bc075c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/source/css/matery.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/source/css/matery.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <updated>1573964754954</updated>
       <workItem from="1573964757456" duration="5585000" />
       <workItem from="1573972071833" duration="21758000" />
-      <workItem from="1574041665821" duration="3125000" />
+      <workItem from="1574041665821" duration="3711000" />
     </task>
     <servers />
   </component>
