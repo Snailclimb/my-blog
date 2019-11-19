@@ -393,35 +393,34 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-  - /medias/featureimages/0.jpg
-  - /medias/featureimages/1.jpg
-  - /medias/featureimages/2.jpg
-  - /medias/featureimages/3.jpg
-  - /medias/featureimages/4.jpg
-  - /medias/featureimages/5.jpg
-  - /medias/featureimages/6.jpg
-  - /medias/featureimages/7.jpg
-  - /medias/featureimages/8.jpg
-  - /medias/featureimages/9.jpg
-  - /medias/featureimages/10.jpg
-  - /medias/featureimages/11.jpg
-  - /medias/featureimages/12.jpg
-  - /medias/featureimages/13.jpg
-  - /medias/featureimages/14.jpg
-  - /medias/featureimages/15.jpg
-  - /medias/featureimages/16.jpg
-  - /medias/featureimages/17.jpg
-  - /medias/featureimages/18.jpg
-  - /medias/featureimages/19.jpg
-  - /medias/featureimages/20.jpg
-  - /medias/featureimages/21.jpg
-  - /medias/featureimages/22.jpg
-  - /medias/featureimages/23.jpg
-  - /medias/featureimages/24.jpg
-  - /medias/featureimages/25.jpg
-  - /medias/featureimages/26.jpg
-  - /medias/featureimages/27.jpg
-  - /medias/featureimages/28.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop1.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop2.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop3.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop4.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop5.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop6.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop7.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop8.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop9.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop10.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop11.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop12.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop13.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop14.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop15.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop16.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop17.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop18.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop19.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop20.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop21.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop22.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop23.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop24.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop25.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop26.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop27.jpg
+  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop28.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
