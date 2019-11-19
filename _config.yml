@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://snailclimb.coding.me
+url: https://javaguide.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -111,5 +111,6 @@ feed:
 deploy:
   type: git
   repository:
+    github: https://github.com/Snailclimb/Snailclimb.github.io.git
     coding: https://git.coding.net/Snailclimb/SnailClimb.coding.me.git
   branch: master

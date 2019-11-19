@@ -2,10 +2,8 @@
 title: 可能是你见过总结的最好的 Java 基础知识点汇总！！！
 date: 2018-09-18 09:25:00
 author: SnailClimb
-top: true
 toc: true
 mathjax: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
 categories: Java
 tags:
   - Java
@@ -21,7 +19,7 @@ tags:
 参见 issue :  [面向过程 ：面向过程性能比面向对象高？？](https://github.com/Snailclimb/JavaGuide/issues/431)
 
 > 这个并不是根本原因，面向过程也需要分配内存，计算内存偏移量，Java性能差的主要原因并不是因为它是面向对象语言，而是Java是半编译语言，最终的执行代码并不是可以直接被CPU执行的二进制机械码。
->
+> 
 > 而面向过程语言大多都是直接编译成机械码在电脑上执行，并且其它一些面向过程的脚本语言性能也并不一定比Java好。
 
 ## 2. Java 语言有哪些特点?
@@ -74,7 +72,7 @@ JRE 是 Java运行时环境。它是运行已编译 Java 程序所需的所有�
 对于Java 7，没什么关键的地方。OpenJDK项目主要基于Sun捐赠的HotSpot源代码。此外，OpenJDK被选为Java 7的参考实现，由Oracle工程师维护。关于JVM，JDK，JRE和OpenJDK之间的区别，Oracle博客帖子在2012年有一个更详细的答案：
 
 > 问：OpenJDK存储库中的源代码与用于构建Oracle JDK的代码之间有什么区别？
->
+> 
 > 答：非常接近 - 我们的Oracle JDK版本构建过程基于OpenJDK 7构建，只添加了几个部分，例如部署代码，其中包括Oracle的Java插件和Java WebStart的实现，以及一些封闭的源代码派对组件，如图形光栅化器，一些开源的第三方组件，如Rhino，以及一些零碎的东西，如附加文档或第三方字体。展望未来，我们的目的是开源Oracle JDK的所有部分，除了我们考虑商业功能的部分。
 
 **总结：**
@@ -95,7 +93,6 @@ JRE 是 Java运行时环境。它是运行已编译 Java 程序所需的所有�
 - Java 的类是单继承的，C++ 支持多重继承；虽然 Java 的类不可以多继承，但是接口可以多继承。
 - Java 有自动内存管理机制，不需要程序员手动释放无用内存
 
-
 ## 6. 什么是 Java 程序的主类 应用程序和小程序的主类有何不同?
 
 一个程序中可以有多个类，但只能有一个类是主类。在 Java 应用程序中，这个主类是指包含 main（）方法的类。而在 Java 小程序中，这个主类是一个继承自系统类 JApplet 或 Applet 的子类。应用程序的主类不一定要求是 public 类，但小程序的主类要求必须是 public 类。主类是 Java 程序执行的入口点。
@@ -111,7 +108,7 @@ JRE 是 Java运行时环境。它是运行已编译 Java 程序所需的所有�
 3. 占内存大小 字符常量只占2个字节; 字符串常量占若干个字节(至少一个字符结束标志) (**注意： char在Java中占两个字节**)
 
 > java编程思想第四版：2.2.2节
-![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg)
+> ![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg)
 
 ## 9. 构造器 Constructor 是否可被 override?
 
@@ -128,8 +125,8 @@ JRE 是 Java运行时环境。它是运行已编译 Java 程序所需的所有�
 
 封装把一个对象的属性私有化，同时提供一些可以被外界访问的属性的方法，如果属性不想被外界访问，我们大可不必提供方法给外界访问。但是如果一个类没有提供给外界访问的方法，那么这个类也没有什么意义了。
 
-
 ### 继承
+
 继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承我们能够非常方便地复用以前的代码。
 
 **关于继承如下 3 点请记住：**
@@ -165,7 +162,6 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
     }
 ```
 
-
 **线程安全性**
 
 String 中的对象是不可变的，也就可以理解为常量，线程安全。AbstractStringBuilder 是 StringBuilder 与 StringBuffer 的公共父类，定义了一些字符串的基本操作，如 expandCapacity、append、insert、indexOf 等公共方法。StringBuffer 对方法加了同步锁或者对调用的方法加了同步锁，所以是线程安全的。StringBuilder 并没有对方法进行加同步锁，所以是非线程安全的。　
@@ -193,6 +189,7 @@ String 中的对象是不可变的，也就可以理解为常量，线程安全�
 
 Java 程序在执行子类的构造方法之前，如果没有用 `super() `来调用父类特定的构造方法，则会调用父类中“没有参数的构造方法”。因此，如果父类中只定义了有参数的构造方法，而在子类的构造方法中又没有用 `super() `来调用父类中特定的构造方法，则编译时将发生错误，因为 Java 程序在父类中找不到没有参数的构造方法可供执行。解决办法是在父类里加上一个不做事且没有参数的构造方法。
 　
+
 ## 16. import java和javax有什么区别？
 
 刚开始的时候 JavaAPI 所必需的包是 java 开头的包，javax 当时只是扩展 API 包来使用。然而随着时间的推移，javax 逐渐地扩展成为 Java API 的组成部分。但是，将扩展从 javax 包移动到 java 包确实太麻烦了，最终会破坏一堆现有的代码。因此，最终决定 javax 包将成为标准API的一部分。
@@ -253,9 +250,9 @@ new运算符，new创建对象实例（对象实例在堆内存中），对象�
 **==** : 它的作用是判断两个对象的地址是不是相等。即，判断两个对象是不是同一个对象(基本数据类型==比较的是值，引用数据类型==比较的是内存地址)。
 
 **equals()** : 它的作用也是判断两个对象是否相等。但它一般有两种使用情况：
--  情况1：类没有覆盖 equals() 方法。则通过 equals() 比较该类的两个对象时，等价于通过“==”比较这两个对象。
-- 情况2：类覆盖了 equals() 方法。一般，我们都覆盖 equals() 方法来比较两个对象的内容是否相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。
 
+- 情况1：类没有覆盖 equals() 方法。则通过 equals() 比较该类的两个对象时，等价于通过“==”比较这两个对象。
+- 情况2：类覆盖了 equals() 方法。一般，我们都覆盖 equals() 方法来比较两个对象的内容是否相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。
 
 **举个例子：**
 
@@ -284,11 +281,12 @@ public class test1 {
 - String 中的 equals 方法是被重写过的，因为 object 的 equals 方法是比较的对象的内存地址，而 String 的 equals 方法比较的是对象的值。
 - 当创建 String 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相同的对象，如果有就把它赋给当前引用。如果没有就在常量池中重新创建一个 String 对象。
 
-##  27. hashCode 与 equals (重要)
+## 27. hashCode 与 equals (重要)
 
 面试官可能会问你：“你重写过 hashcode 和 equals 么，为什么重写equals时必须重写hashCode方法？”
 
 ### hashCode（）介绍
+
 hashCode() 的作用是获取哈希码，也称为散列码；它实际上是返回一个int整数。这个哈希码的作用是确定该对象在哈希表中的索引位置。hashCode() 定义在JDK的Object.java中，这就意味着Java中的任何类都包含有hashCode() 函数。
 
 散列表存储的是键值对(key-value)，它的特点是：能根据“键”快速的检索出对应的“值”。这其中就利用到了散列码！（可以快速找到所需要的对象）
@@ -309,11 +307,9 @@ hashCode() 的作用是获取哈希码，也称为散列码；它实际上是返
 
 推荐阅读：[Java hashCode() 和 equals()的若干问题解答](https://www.cnblogs.com/skywang12345/p/3324958.html)
 
-
 ## 28. 为什么Java中只有值传递？
 
  [为什么Java中只有值传递？](https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/MostCommonJavaInterviewQuestions/%E7%AC%AC%E4%B8%80%E5%91%A8%EF%BC%882018-8-7%EF%BC%89.md)
-
 
 ## 29. 简述线程、程序、进程的基本概念。以及他们之间关系是什么?
 
@@ -333,8 +329,6 @@ Java 线程在运行的生命周期中的指定时刻只可能处于下面6种�
 线程在生命周期中并不是固定处于某一个状态而是随着代码的执行在不同状态之间切换。Java 线程状态变迁如下图所示（图源《Java 并发编程艺术》4.1.4节）：
 
 ![Java线程状态变迁](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/19-1-29/Java%20%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E5%8F%98%E8%BF%81.png)
-
-
 
 由上图可以看出：
 
@@ -360,8 +354,6 @@ final关键字主要用在三个地方：变量、方法、类。
 
 ![Java异常类层次结构图](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-2/Exception.png)
 
-
-
 在 Java 中，所有的异常都有一个共同的祖先java.lang包中的 **Throwable类**。Throwable： 有两个重要的子类：**Exception（异常）** 和 **Error（错误）** ，二者都是 Java 异常处理的重要子类，各自都包含大量子类。
 
 **Error（错误）:是程序无法处理的错误**，表示运行应用程序中较严重问题。大多数错误与代码编写者执行的操作无关，而表示代码运行时 JVM（Java 虚拟机）出现的问题。例如，Java虚拟机运行错误（Virtual MachineError），当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java虚拟机（JVM）一般会选择线程终止。
@@ -384,7 +376,7 @@ final关键字主要用在三个地方：变量、方法、类。
 - **try 块：** 用于捕获异常。其后可接零个或多个catch块，如果没有catch块，则必须跟一个finally块。
 - **catch 块：** 用于处理try捕获到的异常。
 - **finally 块：** 无论是否捕获或处理异常，finally块里的语句都会被执行。当在try块或catch块中遇到return
-语句时，finally语句块将在方法返回之前被执行。
+  语句时，finally语句块将在方法返回之前被执行。
 
 **在以下4种特殊情况下，finally块不会被执行：**
 
@@ -438,19 +430,18 @@ String s = input.readLine();
 
 ### Java 中 IO 流分为几种?
 
-   - 按照流的流向分，可以分为输入流和输出流；
-   - 按照操作单元划分，可以划分为字节流和字符流；
-   - 按照流的角色划分为节点流和处理流。
+- 按照流的流向分，可以分为输入流和输出流；
+- 按照操作单元划分，可以划分为字节流和字符流；
+- 按照流的角色划分为节点流和处理流。
 
 Java Io流共涉及40多个类，这些类看上去很杂乱，但实际上很有规则，而且彼此之间存在非常紧密的联系， Java I0流的40多个类都是从如下4个抽象类基类中派生出来的。
 
-   - InputStream/Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。
-   - OutputStream/Writer: 所有输出流的基类，前者是字节输出流，后者是字符输出流。
+- InputStream/Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。
+- OutputStream/Writer: 所有输出流的基类，前者是字节输出流，后者是字符输出流。
 
 按操作方式分类结构图：
 
 ![IO-操作方式分类](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/IO-操作方式分类.png)
-
 
 按操作对象分类结构图：
 
@@ -498,4 +489,3 @@ Java Io流共涉及40多个类，这些类看上去很杂乱，但实际上很�
 **Java工程师必备学习资源:** 一些Java工程师常用学习资源公众号后台回复关键字 **“1”** 即可免费无套路获取。 
 
 ![我的公众号](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/167598cd2e17b8ec.png)
-

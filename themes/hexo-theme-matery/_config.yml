@@ -269,12 +269,12 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  owner: javaguide-tech
-  repo: myblog-comment
+  owner: Snailclimb
+  repo: Snailclimb.github.io
   oauth:
-    clientId: 92c462fd81c8fec27b4f
-    clientSecret: ca9e1c5a070c720581ae9d077a1be32e3b151e04
-  admin: javaguide-tech
+    clientId: 64345be014af329881c0
+    clientSecret: bf7dc0528b5afc6e39256ce25625eb804999af87
+  admin: Snailclimb
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活

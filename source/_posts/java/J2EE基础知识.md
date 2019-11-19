@@ -1,12 +1,9 @@
 ---
 title: 可能是你见过总结的最好的 JavaEE/J2EE 基础知识点汇总！！！
-date: 2018-09-19 09:25:00
+date: 2018-08-19 09:25:00
 author: SnailClimb
-top: true
-cover: true
 toc: true
 mathjax: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
 categories: Java
 tags:
   - Servlet
@@ -43,6 +40,7 @@ tags:
 参考：《javaweb整合开发王者归来》P7
 
 ## Servlet接口中有哪些方法及Servlet生命周期探秘
+
 Servlet接口定义了5个方法，其中**前三个方法与Servlet生命周期相关**：
 
 - `void init(ServletConfig config) throws ServletException`
@@ -77,6 +75,7 @@ Servlet接口定义了5个方法，其中**前三个方法与Servlet生命周期
 - https://mp.weixin.qq.com/s?__biz=MzI3NzIzMzg3Mw==&mid=100000054&idx=1&sn=71f6c214f3833d9ca20b9f7dcd9d33e4#rd
 
 ## 什么情况下调用doGet()和doPost()
+
 Form标签里的method的属性为get时调用doGet()，为post时调用doPost()。
 
 ## 转发(Forward)和重定向(Redirect)的区别
@@ -85,9 +84,11 @@ Form标签里的method的属性为get时调用doGet()，为post时调用doPost()
 
 **转发（Forward）**
 通过RequestDispatcher对象的forward（HttpServletRequest request,HttpServletResponse response）方法实现的。RequestDispatcher可以通过HttpServletRequest 的getRequestDispatcher()方法获得。例如下面的代码就是跳转到login_success.jsp页面。
+
 ```java
      request.getRequestDispatcher("login_success.jsp").forward(request, response);
 ```
+
 **重定向（Redirect）**  是利用服务器返回的状态码来实现的。客户端浏览器请求服务器的时候，服务器会返回一个状态码。服务器通过 `HttpServletResponse` 的 `setStatus(int status)` 方法设置状态码。如果服务器返回301或者302，则浏览器会到新的网址重新请求该资源。
 
 1. **从地址栏显示来说**
@@ -111,25 +112,28 @@ forward:高.
 redirect:低.
 
 ## 自动刷新(Refresh)
+
 自动刷新不仅可以实现一段时间之后自动跳转到另一个页面，还可以实现一段时间之后自动刷新本页面。Servlet中通过HttpServletResponse对象设置Header属性实现自动刷新例如：
+
 ```java
 Response.setHeader("Refresh","5;URL=http://localhost:8080/servlet/example.htm");
 ```
+
 其中5为时间，单位为秒。URL指定就是要跳转的页面（如果设置自己的路径，就会实现每过5秒自动刷新本页面一次）
 
-
 ## Servlet与线程安全
+
 **Servlet不是线程安全的，多线程并发的读写会导致数据不同步的问题。** 解决的办法是尽量不要定义name属性，而是要把name变量分别定义在doGet()和doPost()方法内。虽然使用synchronized(name){}语句块可以解决问题，但是会造成线程的等待，不是很科学的办法。
 注意：多线程的并发的读写Servlet类属性会导致数据不同步。但是如果只是并发地读取属性而不写入，则不存在数据不同步的问题。因此Servlet里的只读属性最好定义为final类型的。
 
 参考：《javaweb整合开发王者归来》P92
 
-
-
 ## JSP和Servlet是什么关系
+
 其实这个问题在上面已经阐述过了，Servlet是一个特殊的Java程序，它运行于服务器的JVM中，能够依靠服务器的支持向浏览器提供显示内容。JSP本质上是Servlet的一种简易形式，JSP会被服务器处理成一个类似于Servlet的Java程序，可以简化页面内容的生成。Servlet和JSP最主要的不同点在于，Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML分离开来。而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。有人说，Servlet就是在Java中写HTML，而JSP就是在HTML中写Java代码，当然这个说法是很片面且不够准确的。JSP侧重于视图，Servlet更侧重于控制逻辑，在MVC架构模式中，JSP适合充当视图（view）而Servlet适合充当控制器（controller）。
 
 ## JSP工作原理
+
 JSP是一种Servlet，但是与HttpServlet的工作方式不太一样。HttpServlet是先由源代码编译为class文件后部署到服务器下，为先编译后部署。而JSP则是先部署后编译。JSP会在客户端第一次请求JSP文件时被编译为HttpJspPage类（接口Servlet的一个子类）。该类会被服务器临时存放在服务器工作目录里面。下面通过实例给大家介绍。
 工程JspLoginDemo下有一个名为login.jsp的Jsp文件，把工程第一次部署到服务器上后访问这个Jsp文件，我们发现这个目录下多了下图这两个东东。
 .class文件便是JSP对应的Servlet。编译完毕后再运行class文件来响应客户端请求。以后客户端访问login.jsp的时候，Tomcat将不再重新编译JSP文件，而是直接调用class文件来响应客户端请求。
@@ -141,9 +145,11 @@ JSP是一种Servlet，但是与HttpServlet的工作方式不太一样。HttpServ
 参考：《javaweb整合开发王者归来》P97
 
 ## JSP有哪些内置对象、作用分别是什么
+
 [JSP内置对象 - CSDN博客 ](http://blog.csdn.net/qq_34337272/article/details/64310849 ) 
 
 JSP有9个内置对象：
+
 - request：封装客户端的请求，其中包含来自GET或POST请求的参数；
 - response：封装服务器对客户端的响应；
 - pageContext：通过该对象可以获取其他对象；
@@ -154,8 +160,8 @@ JSP有9个内置对象：
 - page：JSP页面本身（相当于Java程序中的this）；
 - exception：封装页面抛出异常的对象。
 
-
 ## Request对象的主要方法有哪些
+
 - setAttribute(String name,Object)：设置名字为name的request 的参数值 
 - getAttribute(String name)：返回由name指定的属性值 
 - getAttributeNames()：返回request 对象所有属性的名字集合，结果是一个枚举的实例 
@@ -181,6 +187,7 @@ JSP有9个内置对象：
 - removeAttribute(String name)：删除请求中的一个属性 
 
 ## request.getAttribute()和 request.getParameter()有何区别
+
 **从获取方向来看：**
 
 `getParameter()`是获取 POST/GET 传递的参数值；
@@ -204,6 +211,7 @@ mapping.findForward。 getAttribute 只能收到程序用 setAttribute 传过来
 `getAttribute()`返回的是Object，需进行转换,可用`setAttribute()`设置成任意对象，使用很灵活，可随时用
 
 ## include指令include的行为的区别
+
 **include指令：** JSP可以通过include指令来包含其他文件。被包含的文件可以是JSP文件、HTML文件或文本文件。包含的文件就好像是该JSP文件的一部分，会被同时编译执行。 语法格式如下： 
 <%@ include file="文件相对 url 地址" %>
 
@@ -211,16 +219,20 @@ i**nclude动作：** `<jsp:include>`动作元素用来包含静态和动态的�
 <jsp:include page="相对 URL 地址" flush="true" />
 
 ## JSP九大内置对象，七大动作，三大指令
+
 [JSP九大内置对象，七大动作，三大指令总结](http://blog.csdn.net/qq_34337272/article/details/64310849)
 
 ## 讲解JSP中的四种作用域
+
 JSP中的四种作用域包括page、request、session和application，具体来说：
+
 - **page**代表与一个页面相关的对象和属性。
 - **request**代表与Web客户机发出的一个请求相关的对象和属性。一个请求可能跨越多个页面，涉及多个Web组件；需要在页面显示的临时数据可以置于此作用域。
 - **session**代表与某个用户与服务器建立的一次会话相关的对象和属性。跟某个用户相关的数据应该放在用户自己的session中。
 - **application**代表与整个Web应用程序相关的对象和属性，它实质上是跨越整个Web应用程序，包括多个页面、请求和会话的一个全局作用域。
 
 ## 如何实现JSP或Servlet的单线程模式
+
 对于JSP页面，可以通过page指令进行设置。
 `<%@page isThreadSafe="false"%>`
 
@@ -229,15 +241,19 @@ JSP中的四种作用域包括page、request、session和application，具体来
 说明：如果将JSP或Servlet设置成单线程工作模式，会导致每个请求创建一个Servlet实例，这种实践将导致严重的性能问题（服务器的内存压力很大，还会导致频繁的垃圾回收），所以通常情况下并不会这么做。
 
 ## 实现会话跟踪的技术有哪些
+
 1. **使用Cookie**
 
 向客户端发送Cookie
+
 ```java
 Cookie c =new Cookie("name","value"); //创建Cookie 
 c.setMaxAge(60*60*24); //设置最大时效，此处设置的最大时效为一天
 response.addCookie(c); //把Cookie放入到HTTP响应中
 ```
+
 从客户端读取Cookie
+
 ```java
 String name ="name"; 
 Cookie[]cookies =request.getCookies(); 
@@ -248,11 +264,11 @@ if(cookies !=null){
     //something is here. 
     //you can get the value 
     cookie.getValue(); 
-       
+
    }
  }
-
 ```
+
 **优点:** 数据可以持久保存，不需要服务器资源，简单，基于文本的Key-Value
 
 **缺点:** 大小受到限制，用户可以禁用Cookie功能，由于保存在本地，有一定的安全风险。
@@ -266,6 +282,7 @@ if(cookies !=null){
 **缺点：** 必须对网站的URL进行编码，所有页面必须动态生成，不能用预先记录下来的URL进行访问。
 
 3.隐藏的表单域
+
 ```html
 <input type="hidden" name ="session" value="..."/>
 ```
@@ -276,8 +293,8 @@ if(cookies !=null){
 
 4. HttpSession
 
-
  在所有会话跟踪技术中，HttpSession对象是最强大也是功能最多的。当一个用户第一次访问某个网站时会自动创建 HttpSession，每个用户可以访问他自己的HttpSession。可以通过HttpServletRequest对象的getSession方 法获得HttpSession，通过HttpSession的setAttribute方法可以将一个值放在HttpSession中，通过调用 HttpSession对象的getAttribute方法，同时传入属性名就可以获取保存在HttpSession中的对象。与上面三种方式不同的 是，HttpSession放在服务器的内存中，因此不要将过大的对象放在里面，即使目前的Servlet容器可以在内存将满时将HttpSession 中的对象移到其他存储设备中，但是这样势必影响性能。添加到HttpSession中的值可以是任意Java对象，这个对象最好实现了 Serializable接口，这样Servlet容器在必要的时候可以将其序列化到文件中，否则在序列化时就会出现异常。
+
 ## Cookie和Session的的区别
 
 Cookie 和 Session都是用来跟踪浏览器用户身份的会话方式，但是两者的应用场景不太一样。
