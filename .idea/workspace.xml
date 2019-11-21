@@ -4,11 +4,8 @@
     <list default="true" id="9d7b3ebd-22d5-4aff-8e98-89de6bc075c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/1Java基础知识.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/2J2EE基础知识.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/javaguide/java基础/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/javaguide/java基础/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/javaguide/jvm/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/javaguide/jvm/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/wechat-official-accounts/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/wechat-official-accounts/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +90,9 @@
       <workItem from="1574059606398" duration="9090000" />
       <workItem from="1574071511022" duration="7902000" />
       <workItem from="1574128123077" duration="5100000" />
+      <workItem from="1574161573238" duration="1041000" />
+      <workItem from="1574264184874" duration="1129000" />
+      <workItem from="1574303371321" duration="300000" />
     </task>
     <servers />
   </component>
