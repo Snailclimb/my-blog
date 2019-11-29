@@ -1,3 +1,16 @@
+---
+title: 全网阅读过20k的Java集合框架常见面试题总结！
+date: 2019-08-21 09:25:00
+author: SnailClimb
+toc: true
+mathjax: false
+categories: Java集合框架
+tags:
+  - Java
+  - Java集合框架
+---
+
+
 > 本文为  SnailClimb 的原创，目前已经收录自我开源的 [JavaGuide](https://github.com/Snailclimb/JavaGuide) 中（61.5 k Star!【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。欢迎 Star!）。
 >
 > 文末有我的公众号，公众号里有我最新整理的Java学习资料，免费分享。
