@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7b3ebd-22d5-4aff-8e98-89de6bc075c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/Java必看书单/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/java基础/Java基础知识.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/java基础/Java基础知识.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/java集合框架/全网阅读过20k的Java集合框架常见面试题总结！.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/java集合框架/全网阅读过20k的Java集合框架常见面试题总结！.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/jvm/Java内存区域.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/jvm/Java内存区域.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/javaguide/java基础/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/javaguide/jvm/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/springboot/index.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +96,10 @@
       <workItem from="1574303371321" duration="333000" />
       <workItem from="1574305410127" duration="490000" />
       <workItem from="1574812466542" duration="3000" />
-      <workItem from="1574995703488" duration="780000" />
+      <workItem from="1574995703488" duration="968000" />
+      <workItem from="1575172448380" duration="2018000" />
+      <workItem from="1575940892063" duration="726000" />
+      <workItem from="1575945538471" duration="3244000" />
     </task>
     <servers />
   </component>

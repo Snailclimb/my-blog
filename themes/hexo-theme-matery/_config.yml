@@ -7,16 +7,11 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Java:
+  JavaGuide:
     icon: fab fa-java
     url: /javaguide
-    children:
-      - name: 1-Java基础
-        url:  /javaguide/java基础
-      - name: 2-JVM
-        url:  /javaguide/jvm
-  SpringBoot:
-    url: /springboot
+  Java必看书单:
+    url: /Java必看书单
     icon: fas fa-seedling
   公众号:
     url: /wechat-official-accounts
