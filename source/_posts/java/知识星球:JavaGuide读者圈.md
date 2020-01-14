@@ -30,9 +30,10 @@ tags:
 5. [拒绝踩坑！如何巧妙化解面试官：“你有什么问题问我吗？”这类问题。](https://articles.zsxq.com/id_qv4fzqq31vk2.html)
 6. [当代程序员常见的面试标准](https://articles.zsxq.com/id_p337epqk4m57.html)
 
-### 大佬们面试经历
+### 大佬们的面试经历
 
 古人云:“**他山之石，可以攻玉**” 。善于学习借鉴别人的面试的成功经验或者失败的教训，可以让自己少走许多弯路。
 
 1. [GitHub 8w+ Star 大佬的秋招求职回忆](https://articles.zsxq.com/id_10ehodaer1pb.html)
+2.  [【秋招 校招面试经历】5面阿里,终获offer.](https://articles.zsxq.com/id_66h4nuqlgbcf.html)
 
