@@ -117,7 +117,7 @@ feed:
 deploy:
   type: git
   repository:
-    github: https://github.com/Snailclimb/Snailclimb.github.io.git
+    github: git@github.com:Snailclimb/Snailclimb.github.io.git
     coding: https://git.dev.tencent.com/JavaGuide/JavaGuide.coding.me.git
     gitee: https://gitee.com/SnailClimb/SnailClimb.git
   branch: master

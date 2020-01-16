@@ -37,3 +37,18 @@ tags:
 1. [GitHub 8w+ Star 大佬的秋招求职回忆](https://articles.zsxq.com/id_10ehodaer1pb.html)
 2.  [【秋招 校招面试经历】5面阿里,终获offer.](https://articles.zsxq.com/id_66h4nuqlgbcf.html)
 
+## 系统架构
+
+1. [后端程序员也要懂的性能测试知识](https://articles.zsxq.com/id_j0s485wjtlwz.html)
+
+### 高并发
+
+#### 消息中间件
+
+#### 缓存
+
+1. [Redis 常见问题总结](https://articles.zsxq.com/id_piib5bzwxzzo.html)
+2. [几种常见的 Redis 集群以及使用场景](https://articles.zsxq.com/id_1x5tvc5n5l45.html)
+
+#### 分库分表
+
