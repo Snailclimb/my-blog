@@ -267,6 +267,7 @@ gitalk:
   owner: Snailclimb
   repo: Snailclimb.github.io
   oauth:
+    accessToken: 513960d101c39d44cec669701472f7fb731e4404
     clientId: 64345be014af329881c0
     clientSecret: bf7dc0528b5afc6e39256ce25625eb804999af87
   admin: Snailclimb
@@ -388,34 +389,45 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop1.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop2.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop3.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop4.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop5.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop6.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop7.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop8.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop9.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop10.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop11.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop12.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop13.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop14.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop15.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop16.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop17.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop18.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop19.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop20.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop21.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop22.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop23.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop24.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop25.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop26.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop27.jpg
-  - https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/bg/desktop28.jpg
+  - https://s2.ax1x.com/2020/01/21/1kG1Et.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGKud.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGMDA.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGnjH.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGQHI.jpg
+  - https://s2.ax1x.com/2020/01/21/1kG3UP.jpg
+  - https://s2.ax1x.com/2020/01/21/1kG84f.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGJC8.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGY8S.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGtgg.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGauj.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGdDs.jpg
+  - https://s2.ax1x.com/2020/01/21/1kGwbn.jpg
+  - https://imgkr.cn-bj.ufileos.com/4f884c4c-0c87-432a-b34e-a328ad330514.jpg
+  - https://imgkr.cn-bj.ufileos.com/5ace33f9-2b69-49a4-9138-a157cdeca2d9.jpg
+  - https://imgkr.cn-bj.ufileos.com/824f8b9e-ca7a-4aa4-9144-2af7f7b79263.jpg
+  - https://imgkr.cn-bj.ufileos.com/39a91e5b-80f4-45ce-a4db-78dbcec6a5a8.jpg
+  - https://imgkr.cn-bj.ufileos.com/b45ef2d4-5d59-4a73-99f1-4d58194b6879.jpg
+  - https://imgkr.cn-bj.ufileos.com/ca94213c-02f0-4f41-a500-e5d5badfeacf.jpg
+  - https://imgkr.cn-bj.ufileos.com/f8e94a0a-3f58-49c7-88d1-3080b1f3a613.jpg
+  - https://imgkr.cn-bj.ufileos.com/ebd8e441-89cb-4419-92db-95a4130ef06a.jpg
+  - https://imgkr.cn-bj.ufileos.com/b58aad46-2d0e-4d09-9119-7b4e5d13a3d3.jpg
+  - https://imgkr.cn-bj.ufileos.com/88c1a735-2f7c-4a30-9a40-ffba7a3446c8.jpg
+  - https://imgkr.cn-bj.ufileos.com/0872fc7a-765b-4891-aa8f-85184a09456c.jpg
+  - https://imgkr.cn-bj.ufileos.com/2b1fd71d-fc22-44a9-a3c6-33a7ad7ff02c.jpg
+  - https://imgkr.cn-bj.ufileos.com/d32d4c3f-f0a5-4ad2-89c2-a1f1aafc5324.jpg
+  - https://imgkr.cn-bj.ufileos.com/44d3a5c9-405c-44cc-ba20-c3e71b676cac.jpg
+  - https://imgkr.cn-bj.ufileos.com/d6f30b41-265f-489b-af35-a6f02e7b8f12.jpg
+  - https://imgkr.cn-bj.ufileos.com/18abb09c-7dce-48f8-9af2-c63c6dcebbd9.jpg
+  - https://imgkr.cn-bj.ufileos.com/dd99e66e-601d-467d-8a91-218f07c25cd0.jpg
+  - https://imgkr.cn-bj.ufileos.com/774eb270-36d3-4c47-a07e-03a38fd5bef7.jpg
+  - https://imgkr.cn-bj.ufileos.com/cb716a60-b69d-45ea-942e-07379f84eccd.jpg
+  - https://imgkr.cn-bj.ufileos.com/c542c417-bf1b-4b26-8509-8be606628d9e.jpg
+  - https://imgkr.cn-bj.ufileos.com/e24b8090-0468-4dae-9df3-75387c18ea34.jpg
+  - https://imgkr.cn-bj.ufileos.com/c07101b1-0d97-495d-afef-463098ddeb65.jpg
+  - https://imgkr.cn-bj.ufileos.com/0406bc83-1a21-4d99-84b7-e824e53784ea.jpg
+  - https://imgkr.cn-bj.ufileos.com/8626ad61-64fc-4b12-9fb6-40148641f2f9.jpg
+
+
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则

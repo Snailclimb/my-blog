@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7b3ebd-22d5-4aff-8e98-89de6bc075c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/Java必看书单/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/javaguide/java基础/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/javaguide/jvm/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/springboot/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +42,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/javaguide/java基础" />
-      <recent name="$PROJECT_DIR$/source/javaguide" />
-      <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source" />
-      <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias" />
-      <recent name="$PROJECT_DIR$/source/_posts/java" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_data" />
       <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/layout" />
       <recent name="$PROJECT_DIR$/source/javaguide" />
       <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias" />
       <recent name="$PROJECT_DIR$/source/_posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source/libs/gitalk" />
+      <recent name="$PROJECT_DIR$/source/javaguide/java基础" />
+      <recent name="$PROJECT_DIR$/source/javaguide" />
+      <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source" />
+      <recent name="$PROJECT_DIR$/themes/hexo-theme-matery/source/medias" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,6 +97,8 @@
       <workItem from="1575172448380" duration="2018000" />
       <workItem from="1575940892063" duration="726000" />
       <workItem from="1575945538471" duration="3244000" />
+      <workItem from="1579611674658" duration="1683000" />
+      <workItem from="1580891474224" duration="2255000" />
     </task>
     <servers />
   </component>
