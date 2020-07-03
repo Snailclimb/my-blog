@@ -29,7 +29,7 @@
     <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.deploy_git" />
   </component>
   <component name="ProjectId" id="1TjDkX8fdQrJh1349A7ZXbhYo6R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -99,6 +99,8 @@
       <workItem from="1575945538471" duration="3244000" />
       <workItem from="1579611674658" duration="1683000" />
       <workItem from="1580891474224" duration="2255000" />
+      <workItem from="1582902592881" duration="1868000" />
+      <workItem from="1583630599040" duration="657000" />
     </task>
     <servers />
   </component>

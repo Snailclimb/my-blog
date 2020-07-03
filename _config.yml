@@ -118,5 +118,4 @@ deploy:
   type: git
   repository:
     github: git@github.com:Snailclimb/Snailclimb.github.io.git
-    gitee: https://gitee.com/SnailClimb/SnailClimb.git
   branch: master
